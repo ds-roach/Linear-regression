@@ -8,12 +8,12 @@ What is Linear Regression?
 	Linear Regression is an algorithm that used for finding or to model the relationship between one independent variable and one dependent variable.
 	
 Type of Linear Regression:
-	- Multiple Regression
-		Linear relationship between two or more features/independent variables with one label/dependent variable
-	- Polynomial Regression
-		Modeling the relationship between one independent variable and one dependent variable using an n-th degree polynomial 
-	- Polynomial Multiple Regression
-		Modeling the relationship between two or more independent variable and one dependent variable using an n-th degree polynomial 
+- Multiple Regression
+	Linear relationship between two or more features/independent variables with one label/dependent variable
+- Polynomial Regression
+	Modeling the relationship between one independent variable and one dependent variable using an n-th degree polynomial 
+- Polynomial Multiple Regression
+	Modeling the relationship between two or more independent variable and one dependent variable using an n-th degree polynomial 
 -------------------------------------------------------------------------------------------------------------------
 
 When should we used Linear Regression?
@@ -46,20 +46,23 @@ Understanding Bias and Variance
 The inability for machine learning to capture the true relationship between variables and the outcome is known as Bias
 
 High Bias
+![image](https://user-images.githubusercontent.com/126078264/220911424-8f9ee7a3-6d29-40ef-bc45-a1718f394a26.png)
 
 When its has a high bias, when it comes to applying unseen observations, it gives a pretty good estimate
 
 Low Bias
-
+![image](https://user-images.githubusercontent.com/126078264/220911521-76bffac8-93b1-4b77-ad48-3342cc3c86fb.png)
 
 
 The Residual Sum of Squares which is the sum of error in prediction, 
 in graph below the straight line is pretty low compared to the curvy line
 
 RSS on Straight Line
+![image](https://user-images.githubusercontent.com/126078264/220911558-ce08c2e9-762f-44eb-941b-e37113255417.png)
 
 
 RSS on Curvy Line 
+![image](https://user-images.githubusercontent.com/126078264/220911690-ff48680f-8c78-4e05-809a-f2e4a1a9657d.png)
 
 
 Variance = the fit between the dataset 
@@ -68,14 +71,11 @@ The Straight Line has Low Variance and the RSS is similar for different dataset
 
 High Bias, with the line hugging as many as possible
 Low Variance, with the line resulting in consistent prediction using different datasets
+![image](https://user-images.githubusercontent.com/126078264/220911732-d505f28e-6a78-40aa-97a7-a98421ec4595.png)
 
+-------------------------------------------------------------------------------------------------------------------
 
 To strike a balance between finding a simple model and a complex model, you can use technique such as:
-	- Regularization is a technique that automatically penalizes the extra features you used in your modeling
-	- Bagging, is a type of ML that use ensemble learning to evolve ML models.
-	Bagging uses a subset of the data and each sample trains a weaker learner.
-	The Weaker Learner can then be combined (through averaging or max vote) to create a strong learner that can make accurate predictions.
-	- Boosting, similar to Bagging, except that it uses all of the data to trains each learner, but the data points that misclassified by previous learners are given more weight so that subsequent learners will give more focus to them during training
-![image](https://user-images.githubusercontent.com/126078264/220904756-1406725c-64c7-4ca7-838b-e856e5260e8b.png)
-
-
+- Regularization is a technique that automatically penalizes the extra features you used in your modeling
+- Bagging, is a type of ML that use ensemble learning to evolve ML models. Bagging uses a subset of the data and each sample trains a weaker learner. The Weaker Learner can then be combined (through averaging or max vote) to create a strong learner that can make accurate predictions.
+- Boosting, similar to Bagging, except that it uses all of the data to trains each learner, but the data points that misclassified by previous learners are given more weight so that subsequent learners will give more focus to them during training.
