@@ -44,7 +44,6 @@ You’ll start with the simplest case, which is simple linear regression. There 
 3. Create a regression model and fit it with existing data.
 4. Check the results of model fitting to know whether the model is satisfactory.
 5. Apply the model for predictions.
-
 These steps are more or less general for most of the regression approaches and implementations. Throughout the rest of the tutorial, you’ll learn how to do these steps for several different scenarios.
 
 Step 1: Import packages and classes
@@ -52,5 +51,4 @@ Step 1: Import packages and classes
 The first step is to import the package numpy and the class LinearRegression from sklearn.linear_model:
 
     import numpy as np
-    import pandas as pd
     from sklearn.linear_model import LinearRegression
