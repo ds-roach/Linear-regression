@@ -51,4 +51,13 @@ Step 1: Import packages and classes
 The first step is to import the package numpy and the class LinearRegression from sklearn.linear_model:
 
     import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
     from sklearn.linear_model import LinearRegression
+
+Step 2: Provide data
+
+The second step is defining data to work with. The inputs (regressors, 𝑥) and output (response, 𝑦) should be arrays or similar objects. This is the simplest way of providing data for regression:
+
+    x = np.array([5, 15, 25, 35, 45, 55]).reshape((-1, 1))
+    y = np.array([5, 20, 14, 32, 22, 38])
