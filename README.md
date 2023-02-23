@@ -8,11 +8,11 @@ What is Linear Regression?
 	Linear Regression is an algorithm that used for finding or to model the relationship between one independent variable and one dependent variable.
 	
 Type of Linear Regression:
-	§ Multiple Regression
+	- Multiple Regression
 		Linear relationship between two or more features/independent variables with one label/dependent variable
-	§ Polynomial Regression
+	- Polynomial Regression
 		Modeling the relationship between one independent variable and one dependent variable using an n-th degree polynomial 
-	§ Polynomial Multiple Regression
+	- Polynomial Multiple Regression
 		Modeling the relationship between two or more independent variable and one dependent variable using an n-th degree polynomial 
 -------------------------------------------------------------------------------------------------------------------
 
@@ -40,5 +40,42 @@ In order to use linear regression to model a dataset, the following assumptions 
 	
 -------------------------------------------------------------------------------------------------------------------
 Polynomial Regression
-Raising the polynomial degree by 1 improve the R squared value![image](https://user-images.githubusercontent.com/126078264/220904397-a097b335-1e2f-4314-9f3b-9da6db76f752.png)
+Raising the polynomial degree by 1 improve the R squared value
+
+Understanding Bias and Variance
+The inability for machine learning to capture the true relationship between variables and the outcome is known as Bias
+
+High Bias
+
+When its has a high bias, when it comes to applying unseen observations, it gives a pretty good estimate
+
+Low Bias
+
+
+
+The Residual Sum of Squares which is the sum of error in prediction, 
+in graph below the straight line is pretty low compared to the curvy line
+
+RSS on Straight Line
+
+
+RSS on Curvy Line 
+
+
+Variance = the fit between the dataset 
+The Curvy Line has a High Variance and the RSS is different for different dataset
+The Straight Line has Low Variance and the RSS is similar for different dataset
+
+High Bias, with the line hugging as many as possible
+Low Variance, with the line resulting in consistent prediction using different datasets
+
+
+To strike a balance between finding a simple model and a complex model, you can use technique such as:
+	- Regularization is a technique that automatically penalizes the extra features you used in your modeling
+	- Bagging, is a type of ML that use ensemble learning to evolve ML models.
+	Bagging uses a subset of the data and each sample trains a weaker learner.
+	The Weaker Learner can then be combined (through averaging or max vote) to create a strong learner that can make accurate predictions.
+	- Boosting, similar to Bagging, except that it uses all of the data to trains each learner, but the data points that misclassified by previous learners are given more weight so that subsequent learners will give more focus to them during training
+![image](https://user-images.githubusercontent.com/126078264/220904756-1406725c-64c7-4ca7-838b-e856e5260e8b.png)
+
 
