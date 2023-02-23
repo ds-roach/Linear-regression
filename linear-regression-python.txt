@@ -35,3 +35,20 @@ Linear regression calculates the estimators of the regression coefficients or si
 The estimated or predicted response, 𝑓(𝐱ᵢ), for each observation 𝑖 = 1, …, 𝑛, should be as close as possible to the corresponding actual response 𝑦ᵢ. The differences 𝑦ᵢ - 𝑓(𝐱ᵢ) for all observations 𝑖 = 1, …, 𝑛, are called the residuals. Regression is about determining the best predicted weights—that is, the weights corresponding to the smallest residuals.
 
 To get the best weights, you usually minimize the sum of squared residuals (SSR) for all observations 𝑖 = 1, …, 𝑛: SSR = Σᵢ(𝑦ᵢ - 𝑓(𝐱ᵢ))². This approach is called the method of ordinary least squares.
+
+Simple Linear Regression With scikit-learn
+You’ll start with the simplest case, which is simple linear regression. There are five basic steps when you’re implementing linear regression:
+
+1. Import the packages and classes that you need.
+2. Provide data to work with, and eventually do appropriate transformations.
+3. Create a regression model and fit it with existing data.
+4. Check the results of model fitting to know whether the model is satisfactory.
+5. Apply the model for predictions.
+These steps are more or less general for most of the regression approaches and implementations. Throughout the rest of the tutorial, you’ll learn how to do these steps for several different scenarios.
+
+Step 1: Import packages and classes
+
+The first step is to import the package numpy and the class LinearRegression from sklearn.linear_model:
+
+    import numpy as np
+    from sklearn.linear_model import LinearRegression
